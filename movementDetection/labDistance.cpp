@@ -1,26 +1,15 @@
 #include "labDistance.h"
+#include <vector>
 
-labDistance::labDistance(unsigned char **R, unsigned char **G, unsigned char **B, unsigned char **R2, unsigned char **G2, unsigned char **B2, int height, int width) {
-	float ***firstMean = new float **[height];
-	float ***secondMean = new float **[height];
-
-	height = height;
-	width = width;
-
-	for (int i = 1; i < height; i++) {
-		firstMean[i] = new float *[height * width];
-		secondMean[i] = new float *[height * width];
-		for (int j = 1; j < width; j++) {
-			firstMean[i][j] = new float[3];
-			secondMean[i][j] = new float[3];
-		}
-	}
+labDistance::labDistance(unsigned char **R, unsigned char **G, unsigned char **B, unsigned char **R2, unsigned char **G2, unsigned char **B2, int _height, int _width) {
+	vector<vector<vector<float>>> firstMean;
+	vector<vector<vector<float>>> secondMean;
 
 	firstMean = calculateMeanValues(R, G, B, height, width);
 	secondMean = calculateMeanValues(R2, G2, B2, height, width);
 }
 
-float *labDistance::convertToLab(unsigned char R, unsigned char G, unsigned char B) {
+vector<float> labDistance::convertToLab(unsigned char R, unsigned char G, unsigned char B) {
 	float r = (float) R / 255;
 	float g = (float) G / 255;
 	float b = (float) B / 255;
@@ -42,27 +31,22 @@ float *labDistance::convertToLab(unsigned char R, unsigned char G, unsigned char
 	float d = 500 * (x - y);
 	float c = 200 * (y - z);
 
-	float arr[3] = { a, d, c };
+	vector<float> arr;
+	arr.push_back(a);
+	arr.push_back(d);
+	arr.push_back(c);
 
-	return &arr[0];
+	return arr;
 }
 
 //void labDistance::measureFactors(int height, int width, unsigned char **R, unsigned char **G, unsigned char **B, unsigned int **frames) {}
 
-float ***labDistance::calculateMeanValues(unsigned char **R, unsigned char **G, unsigned char **B, int height, int width) {
-	float ***meanFrames = new float**[height];
-	
-	for (int i = 0; i < width; i++) {
-		meanFrames[i] = new float *[height];
-		for (int j = 1; j < height; j++) {
-			meanFrames[i][j] = new float[3];
-			meanFrames[i][j][0] = 0;
-			meanFrames[i][j][1] = 0;
-			meanFrames[i][j][2] = 0;
-		}
-	}
+vector<vector<vector<float>>> labDistance::calculateMeanValues(unsigned char **R, unsigned char **G, unsigned char **B, int height, int width) {
+	vector<vector<vector<float>>> meanFrames(width);
 
-	for (int i = 0; i < width; i++)
+	for (int i = 0; i < width; i++) {
+		vector<vector<float>> widthVec(height);
+
 		for (int j = 0; j < height; j++) {
 			int meanR = 0;
 			int meanG = 0;
@@ -79,9 +63,14 @@ float ***labDistance::calculateMeanValues(unsigned char **R, unsigned char **G, 
 			meanG /= 100;
 			meanB /= 100;
 
-			meanFrames[i][j] = labDistance::convertToLab(meanR, meanG, meanB);
 
+			vector<float> col = labDistance::convertToLab(meanR, meanG, meanB);
+
+			widthVec.at(j) = col;
 		}
+
+		meanFrames.at(i) = widthVec;
+	}
 
 	return meanFrames;
 }
@@ -96,13 +85,13 @@ unsigned char **labDistance::calculateNewPosisions() {
 	for (int i = 0; i < labDistance::width; i++)
 		for (int j = 0; j < labDistance::height; j++) {
 		
-			float *firstFrame = labDistance::firstMean[i][j];
+			vector <float> firstFrame = labDistance::firstMean[i][j];
 			float myFactor = 0;
 			int framrX, frameY;
 
 			for (int a = 0; a < labDistance::width; a++)
 				for (int b = 0; b < labDistance::height; b++) {
-					float *secondFrame = labDistance::secondMean[a][b];
+					vector<float> secondFrame = labDistance::secondMean[a][b];
 
 					float currentFactor = labDistance::calculateDelta(firstFrame, secondFrame);
 
@@ -119,7 +108,7 @@ unsigned char **labDistance::calculateNewPosisions() {
 	return newPositions;
 }
 
-float labDistance::calculateDelta(float* labA, float* labB) {
+float labDistance::calculateDelta(vector<float> labA, vector<float> labB) {
 	float deltaL = labA[0] - labB[0];
 	float deltaA = labA[1] - labB[1];
 	float deltaB = labA[2] - labB[2];

@@ -1,14 +1,18 @@
 ﻿  labDistance.cpp
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(33): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(132): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(133): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(134): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(121): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(122): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\labdistance.cpp(123): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Compiling...
+  main.cpp
+  Generating Code...
   movementDetection.vcxproj -> C:\Users\micha\Desktop\PK\PiADM\projekt\repo\movementDetection\Debug\movementDetection.exe
