@@ -92,6 +92,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -112,10 +113,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="labDistance.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ppmStructure.cpp" />
     <ClCompile Include="TPGM.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="labDistance.h" />
+    <ClInclude Include="ppmStructure.h" />
     <ClInclude Include="TPGM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
