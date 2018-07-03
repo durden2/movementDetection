@@ -1,0 +1,36 @@
+﻿  TPGM.cpp
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(56): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(30): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(44): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(46): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(48): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(67): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(63): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(80): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(127): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(101): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(115): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(117): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(119): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1195): note: see declaration of 'fscanf'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(137): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\tpgm.cpp(157): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+  main.cpp
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(171): warning C4101: 'i_ppm': unreferenced local variable
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(171): warning C4101: 'j_ppm': unreferenced local variable
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(277): warning C4101: 'j_ppm_next': unreferenced local variable
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(223): warning C4101: 'i_ppm': unreferenced local variable
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(223): warning C4101: 'j_ppm': unreferenced local variable
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(277): warning C4101: 'i_ppm_next': unreferenced local variable
+  Generating Code...
