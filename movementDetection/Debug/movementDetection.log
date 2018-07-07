@@ -1,18 +1,5 @@
-﻿  TPGM.cpp
-  main.cpp
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\image.cpp(22): warning C4101: 'i_ppm': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\image.cpp(22): warning C4101: 'j_ppm': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(125): warning C4101: 'max_color_ppm': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(150): warning C4101: 'j_ppm_next': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(126): warning C4101: 'i_ppm': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(149): warning C4101: 'max_color_ppm_next': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(126): warning C4101: 'j_ppm': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(126): warning C4101: 'hpos_ppm': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(150): warning C4101: 'i_ppm_next': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(150): warning C4101: 'hpos_ppm_next': unreferenced local variable
-  Image.cpp
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\image.cpp(22): warning C4101: 'i_ppm': unreferenced local variable
-c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\image.cpp(22): warning C4101: 'j_ppm': unreferenced local variable
-  histogram.cpp
-  Generating Code...
+﻿  main.cpp
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\image.cpp(24): warning C4101: 'i_ppm': unreferenced local variable
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\image.cpp(24): warning C4101: 'j_ppm': unreferenced local variable
+c:\users\micha\desktop\pk\piadm\projekt\repo\movementdetection\movementdetection\main.cpp(158): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   movementDetection.vcxproj -> C:\Users\micha\Desktop\PK\PiADM\projekt\repo\movementDetection\Debug\movementDetection.exe

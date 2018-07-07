@@ -96,6 +96,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <StackReserveSize>41943040</StackReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -115,10 +116,12 @@
     <ClCompile Include="histogram.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ppmStructure.cpp" />
     <ClCompile Include="TPGM.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="histogram.h" />
+    <ClInclude Include="ppmStructure.h" />
     <ClInclude Include="TPGM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

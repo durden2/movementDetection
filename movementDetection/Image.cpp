@@ -7,14 +7,16 @@
 
 class Image {
 public:
+	int frameSize = 4;
 	int w;
 	int h;
 	int max_color;
-	histogram hist = histogram();
 
 	unsigned char **R;
 	unsigned char **G;
 	unsigned char **B;
+
+	unsigned char **moveFrames;
 
 	Image(std::string imagePath) {
 		int h_ppm, w_ppm;
@@ -42,13 +44,25 @@ public:
 		for (int i = 1; i < h_ppm; i++)
 			B[i] = B[i - 1] + w_ppm;
 
-		w = w_ppm;
-		h = h_ppm;
+		this->w = w_ppm;
+		this->h = h_ppm;
 		max_color = max_color_ppm;
 
 		if (readPPMB_data(R[0], G[0], B[0], imagePath.c_str(), hpos_ppm, h_ppm, w_ppm, max_color_ppm) == 0) exit(1);
+	}
 
-		hist.setHistogramValues(R, G, B, h, w);
+	~Image() {
+		delete[] R[0];
+		delete[] R;
+
+		delete[] G[0];
+		delete[] G;
+
+		delete[] B[0];
+		delete[] B;
+ 
+		delete[] moveFrames[0];
+		delete[] moveFrames;
 	}
 
 
@@ -67,10 +81,10 @@ public:
 		if (writePPMB_image(outfname_ppm.c_str(), R[0], G[0], B[0], h, w, max_color) == 0) exit(1);
 	}
 
-	void drawFrames(unsigned char **frames) {
-		for (int x = 0; x < h - 10; x++) {
-			for (int y = 0; y < w - 10; y++) {
-				if ((int) frames[x][y] != 0) {
+	void drawFrames() {
+		for (int x = 0; x < h - frameSize; x++) {
+			for (int y = 0; y < w - frameSize; y++) {
+				if ((int) moveFrames[x][y] != 0) {
 					R[x][y] = 0;
 					G[x][y] = 0;
 					B[x][y] = 255;
@@ -79,7 +93,23 @@ public:
 		}
 	}
 
-	double compareImages(Image imgToCompare) {
-		return hist.compareHistograms(hist, imgToCompare.hist);
+	void initMovementFrames() {
+		moveFrames = new unsigned char *[h];
+		moveFrames[0] = new unsigned char[h * w];
+		for (int i = 1; i < h; i++)
+			moveFrames[i] = moveFrames[i - 1] + w;
+	
+		int t = 0;
+
+		for (int x = 0; x < h; x++) {
+			for (int y = 0; y < w; y++) {
+				if (x % frameSize == 0 || y % frameSize == 0) {
+					moveFrames[x][y] = 1;
+				}
+				else {
+					moveFrames[x][y] = 0;
+				}
+			}
+		}
 	}
 };
